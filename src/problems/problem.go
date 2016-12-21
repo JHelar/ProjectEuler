@@ -1,5 +1,5 @@
-package project
+package problem
 
-type Project struct {
+type Problem struct {
 	Calculate func(args...interface{}) int
 }

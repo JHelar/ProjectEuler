@@ -1,7 +1,7 @@
-package project1
+package problem1
 
 import (
-	"projects"
+	"problems"
 )
 
 func treeFive(start, end int) int {
@@ -14,8 +14,8 @@ func treeFive(start, end int) int {
 	return sum
 }
 
-func New() *project.Project{
-	return &project.Project{Calculate:func(args...interface{})int{
+func New() *problem.Problem{
+	return &problem.Problem{Calculate:func(args...interface{})int{
 		theNumber := args[0].(int)
 		return treeFive(1, theNumber - 1)
 	}}

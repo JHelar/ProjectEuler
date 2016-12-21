@@ -1,8 +1,6 @@
-package project2
+package problem2
 
-import (
-	"projects"
-)
+import "problems"
 
 func fib(one, another, max int) int {
 	if one <= max {
@@ -19,8 +17,8 @@ func fib(one, another, max int) int {
 	}
 }
 
-func New() *project.Project{
-	return &project.Project{Calculate:func(args...interface{})int {
+func New() *problem.Problem{
+	return &problem.Problem{Calculate:func(args...interface{})int {
 		return fib(1, 2, args[0].(int))
 	}}
 }

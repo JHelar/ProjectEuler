@@ -1,7 +1,7 @@
-package project3
+package problem3
 
 import (
-	"projects"
+	"problems"
 )
 
 func primeFactors(n int) []int{
@@ -17,8 +17,8 @@ func primeFactors(n int) []int{
 	return factors
 }
 
-func New() *project.Project{
-	return &project.Project{Calculate:func(args...interface{})int {
+func New() *problem.Problem{
+	return &problem.Problem{Calculate:func(args...interface{})int {
 		biggest := 0
 		for _, v := range primeFactors(args[0].(int)) {
 			if v > biggest{
