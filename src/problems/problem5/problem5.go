@@ -3,7 +3,7 @@ package problem5
 import "problems"
 
 func findSmallestDivisible(numberRange int) int {
-	count := 1;
+	count := 20;
 	done := true
 	for {
 		done = true
@@ -16,7 +16,7 @@ func findSmallestDivisible(numberRange int) int {
 		if done {
 			break
 		}else{
-			count += 1
+			count += 20
 		}
 	}
 	return count
